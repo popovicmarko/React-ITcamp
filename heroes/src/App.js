@@ -13,9 +13,9 @@ function MyButton() {
 function NavBar() {
   return (
     <div className="nav">
-        <h2>Home</h2>
-        <h2>Heroes</h2>
-        <h2>My Team</h2>
+      <h2>Home</h2>
+      <h2>Heroes</h2>
+      <h2>My Team</h2>
     </div>
   );
 }
