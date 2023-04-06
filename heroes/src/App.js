@@ -1,12 +1,13 @@
 import React from "react";
+import ReactPlayer from 'react-player'
 import './App.css';
 import logo from './logo.png';
 
 function MyButton() {
   return (
-    <button>
-      Click to see the magic
-    </button>
+      <button>
+        Click to see the magic
+      </button>
   );
 }
 
@@ -26,6 +27,14 @@ function Logo() {
     </div>
   );
 }
+function Video() {
+  return (
+    <div className="video">
+      <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' />
+    </div>
+  );
+}
+
 
 export default function MyApp() {
   return (
@@ -39,6 +48,7 @@ export default function MyApp() {
       < div className='cointener'>
         <h1>Welcome to heroes</h1>
         <MyButton />
+        <Video />
       </div>
 
     </div>
