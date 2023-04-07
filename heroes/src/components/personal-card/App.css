@@ -1,0 +1,38 @@
+.card{
+    max-width: fit-content;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    gap: 1rem;
+    box-shadow: 0 0 10px red;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    z-index: 1;
+    width: 18rem;
+}
+img{
+    border-radius: 50%;
+    height: 10rem;
+    width: auto;
+}
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
