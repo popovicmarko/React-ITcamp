@@ -10,11 +10,9 @@ export default function App() {
   return (
     <div className="App">
       <Navbar />
-      <div className="home">
-        <Home className='home' appName="MP" username="Marko Popovic" />
-      </div>
-      <AboutMe />
+      <Home className='home' appName="MP" username="Marko Popovic" />
       <MyTeam />
+      <AboutMe />
     </div>
   );
 }
