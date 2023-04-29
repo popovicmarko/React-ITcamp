@@ -1,13 +1,16 @@
 import './Navbar.css';
 import logo from './logo.png';
 import React from "react";
+import {NavLink} from 'react-router-dom'
 
 function NavBar() {
   return (
     <div className="nav">
-      <a href="#top">Home</a>
-      <a href="#card">My Team</a>
-      <a href="#aboutMe">About me</a>
+      <NavLink to='/'>Home</NavLink>
+      <NavLink to='/team'>My Team</NavLink>
+      <NavLink to='/aboutas'>About me</NavLink>
+      <NavLink to='/login'>Log in</NavLink>
+      <NavLink to='/register'>Registar</NavLink>
     </div>
   );
 }
