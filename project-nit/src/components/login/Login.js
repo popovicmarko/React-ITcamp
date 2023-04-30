@@ -1,21 +1,21 @@
 import { useState } from "react";
-
+import './Login.css';
 export function Login() {
-    function handleClick(e){
-    
+    function handleClick(e) {
+
     }
     const [username, setUsername] = useState('')
-    
+
     return (
-        <div>
-            <h1>Login</h1>
+        <div className="cointener">
             <form>
-                <label>e-mail</label>
-                <input type="text" value={username} onChange={(e ) => {setUsername(e.target.value)} } placeholder="Enter Username" name="username" required></input>
-                <label>password</label>
-                <input type="password " name="password " required></input>
+                <h1>Login</h1>
+                <label className="label">Username</label>
+                <input className="input" type="text" value={username} onChange={(e) => { setUsername(e.target.value) }} placeholder="Username" name="username" required></input>
+                <label className="label">Password</label>
+                <input className="input" type="password " name="password " placeholder="Passwors"  required></input>
                 <button id="login" onClick={handleClick}>Login</button>
-                <p style={{fontSize:'2rem', color: 'black'}}> {username}</p>
+                <p style={{ fontSize: '2rem', color: 'black' }}> {username}</p>
             </form>
         </div>
     )
