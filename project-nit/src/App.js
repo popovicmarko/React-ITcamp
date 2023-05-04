@@ -9,6 +9,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom"
 import { Register } from './components/register/Register';
 import { Login } from './components/login/Login';
 import Hotels from "./pages/Hotels/Hotel";
+import Teams from "./pages/Teams/Teams";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
         <Route path="/hotels" element={<Hotels />} />
         <Route path='/register' element={<Register />} />
         <Route path='/login' element={<Login />} />
+        <Route path="/teams" element={<Teams />} />
         
       </Routes>
     </BrowserRouter>

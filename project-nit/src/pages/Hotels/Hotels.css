@@ -1,0 +1,10 @@
+.hotels {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    margin: 100px  0 100px 0;
+  }
+  
