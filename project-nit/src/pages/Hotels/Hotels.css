@@ -8,3 +8,10 @@
     margin: 100px  0 100px 0;
   }
   
+  .hotel-one{
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    
