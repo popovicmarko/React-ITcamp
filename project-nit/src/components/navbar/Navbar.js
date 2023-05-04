@@ -11,6 +11,7 @@ function NavBar() {
       <NavLink to='/aboutas'>About me</NavLink>
       <NavLink to='/login'>Log in</NavLink>
       <NavLink to='/register'>Registar</NavLink>
+      <NavLink to='/hotels'>Hotels</NavLink>
     </div>
   );
 }

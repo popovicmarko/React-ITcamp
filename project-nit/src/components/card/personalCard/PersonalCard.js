@@ -1,8 +1,12 @@
+import { useState } from "react";
 import React from "react";
 import "./PersonalCard.css";
 import { FaGithub } from "react-icons/fa";
 
 export default function PersonCard(props) {
+    function handleClick({visee, doaj}) {
+
+    }
     return (
 
 
@@ -26,6 +30,7 @@ export default function PersonCard(props) {
                 >
                 </a>
             </div>
+            <button> Visee </button>
         </div>
 
     );

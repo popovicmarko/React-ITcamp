@@ -8,6 +8,7 @@ import MyTeam from './components/card/MyTeam/MyTeam';
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import { Register } from './components/register/Register';
 import { Login } from './components/login/Login';
+import Hotels from "./pages/Hotels/Hotel";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <Route path='/team' element={<MyTeam/>} />
         <Route path='/register' element={<Register />} />
         <Route path='/login' element={<Login />} />
+        <Route path="/hotels" element={<Hotels />} />
         
       </Routes>
     </BrowserRouter>
