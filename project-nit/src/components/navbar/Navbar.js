@@ -10,7 +10,7 @@ function NavBar() {
       <NavLink to='/hotels'>Hotels</NavLink>
       <NavLink to='/teams'>Teams</NavLink>
       <NavLink to='/login'>Log in</NavLink>
-      <NavLink to='/register'>Registar</NavLink>
+      <NavLink to='/register'>Register</NavLink>
     </div>
   );
 }
