@@ -1,14 +1,14 @@
 .cardContainer{
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
     border-radius: 1rem;
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
-    margin: 3rem;
+    margin: 100px 50px 100px 50px;
 }
 .container{
     display: flex;
@@ -16,6 +16,7 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    
 }
 h1{
     font-size: 2rem;

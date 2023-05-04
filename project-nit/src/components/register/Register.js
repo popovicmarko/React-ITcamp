@@ -6,7 +6,7 @@ export function Register() {
     }
     const [username, setUsername] = useState('')
     return (
-        <div className='cointener'>
+        <div className='rCointener'>
             <form>
                 <h1>Register</h1>
                 <label>Name</label>
