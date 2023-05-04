@@ -6,6 +6,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+
+  span, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    color: black;
+  }
+  a{
+    text-decoration: none;
   }
   .hotelimg {
     border-radius: 3%;

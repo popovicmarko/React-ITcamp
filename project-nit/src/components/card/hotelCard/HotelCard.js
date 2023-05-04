@@ -15,11 +15,6 @@ export default function HotelCard(props) {
     return arr;
   };
 
-  // 5-6 => "Decent"
-  // 6-7 => ""
-  // 7-8 => "Good"
-  // 8-9 => "Very Good"
-  // 9-10 => "Wonderful"
 
   const slashIndex = props.rating.indexOf("/");
   const rating = +props.rating.slice(0, slashIndex);
@@ -43,23 +38,15 @@ export default function HotelCard(props) {
         <img src={props.imageURL} alt={"profile_img"} className="hotelimg" />
         <div>
           <p className="hotelname">{props.name}</p>
-          <h3
-            style={{
-              background:
-                rating < 7 ? "orange" : rating < 9 ? "yellow" : "green",
-            }}
-          >
+          <h3>
             {stars(props.stars)}
           </h3>
           <p className="hoteldesc">{props.description}</p>
           <p>
             <span className="hotelrat"> {props.rating} </span>{" "}
-            <span style={{ color: "gray" }}>{reaction} </span>
-            <span style={{ color: "gray" }}>({props.reviews} </span>)
+            <span >{reaction} </span>
+            <span>({props.reviews} </span>)
           </p>
-          {/* 1. nacin uslovnog prikazivanja (Conditional rendering) */}
-          {/* {showRecomendation && <p>Recomendation</p>} */}
-          {/* 2. nacin uslovnog prikazivanja (Conditional rendering) */}
           {showRecomendation ? <p>Recomendation</p> : <></>}
         </div>
       </div>
