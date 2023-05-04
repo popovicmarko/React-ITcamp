@@ -4,12 +4,12 @@ import { BASE_URL } from "../../../App";
 
 function TeamCard({
   name,
-  matches,
-  points,
+  opis,
+  imageUrl,
+  vise,
   deleteTeam,
   extended,
   setExtended,
-  information,
   id,
 }) {
   const [closed, setClosed] = useState(true);
@@ -29,24 +29,28 @@ function TeamCard({
   }, [closed]);
   return (
     <div className="cardContainer2">
-      <div className="card2">
-        <p>{name}</p>
-        <p>Broj odigranih meceva: {matches}</p>
-        <p>Broj poena: {points}</p>
-        <button onClick={deleteTeam}>Izbrisi tim</button>
-        <button
-          onClick={() => {
-            setClosed(!closed);
-          }}
-        >
-          {closed ? <span>Prikazi vise</span> : <span>Prikazi manje</span>}
-        </button>
-      </div>
-      {!closed && (
+      <div className="container">
+          <h2>{name}</h2>
+          <img src={imageUrl} alt="slika" />
+        <p>{opis} {!closed && (
         <div className="info">
-          <p>{information}</p>
+          <p>{vise}</p>
         </div>
-      )}
+      )}</p>
+        
+        <div className="footer">
+          <button onClick={deleteTeam}>Izbrisi clana tima </button>
+          <button
+            onClick={() => {
+              setClosed(!closed);
+            }}
+          >
+            {closed ? <span className="color">Prikazi vise o clanu</span> : <span>Prikazi manje o clanu</span>}
+          </button>
+        </div>
+
+      </div>
+      
     </div>
   );
 }

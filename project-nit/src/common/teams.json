@@ -1,37 +1,18 @@
 [
   {
     "id": 1,
-    "name": "Arsenal",
-    "points": 72,
-    "matches": 30,
-    "information": "Treci najuspesniji klub u Engleskoj."
+    "name": "Marko Popovic",
+    "opis": "I am a student of the State University of Novi Pazar in Novi Pazar, front-end devloper and a passionate learner.",
+    "imageUrl": "https://avatars.githubusercontent.com/u/104674760?v=4",
+    "vise": "very hard worker and developer"
+
   },
   {
     "id": 2,
-    "name": "Man City",
-    "points": 64,
-    "matches": 30,
-    "information": "Tim koji je osnovan 2009. godine."
-  },
-  {
-    "id": 3,
-    "name": "Newcastle",
-    "points": 56,
-    "matches": 31,
-    "information": "Tim sa najvise zutih kartona u tekucoj sezoni."
-  },
-  {
-    "id": 4,
-    "name": "Liverpool",
-    "points": 51,
-    "matches": 29,
-    "information": "Najuspesniji klub u Engleskoj."
-  },
-  {
-    "id": 5,
-    "name": "Man United",
-    "points": 48,
-    "matches": 31,
-    "information": "Drugi najuspesniji klub u Engleskoj."
+    "name": "Dzenan Kosuta",
+    "opis": "I am a student of the State University of Novi Pazar in Novi Pazar, front-end devloper and a passionate learner.",
+    "imageUrl": "https://avatars.githubusercontent.com/u/89378479?v=4",
+    "vise": "very hard worker and developer, very hard worker and programmer, professor of mathematics"
+
   }
 ]

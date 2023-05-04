@@ -19,19 +19,16 @@ export default function Teams() {
     <div>
       {teams.map((team) => (
         <TeamCard
-          key={team.id}
           name={team.name}
-          matches={team.matches}
-          points={team.points}
+          imageUrl={team.imageUrl}
+          opis={team.opis}
+          vise={team.vise}
           deleteTeam={() => deleteTeam(team.id)}
           extended={extended}
           setExtended={setExtended}
-          information={team.information}
           id={team.id}
         />
       ))}
-      <Link to={"/quotes"}>Vidi citate</Link>
-      <button onClick={() => navigation("/hotels")}>Hotels</button>
     </div>
   );
 }
