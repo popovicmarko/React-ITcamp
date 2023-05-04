@@ -33,7 +33,6 @@ export default function HotelCard(props) {
   const showRecomendation = rating >= 8 ? true : false;
 
   return (
-    <div className="hotelgrid">
       <div className="Hotelcard">
         <img src={props.imageURL} alt={"profile_img"} className="hotelimg" />
         <div>
@@ -50,6 +49,5 @@ export default function HotelCard(props) {
           {showRecomendation ? <p>Recomendation</p> : <></>}
         </div>
       </div>
-    </div>
   );
 }

@@ -8,7 +8,8 @@ import MyTeam from './components/card/MyTeam/MyTeam';
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import { Register } from './components/register/Register';
 import { Login } from './components/login/Login';
-import Hotels from "./pages/Hotels/Hotel";
+import Hotels from "./pages/Hotels/Hotels";
+import Hotel from "./pages/hotel/Hotel";
 import Teams from "./pages/Teams/Teams";
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
         <Route path='/register' element={<Register />} />
         <Route path='/login' element={<Login />} />
         <Route path="/teams" element={<Teams />} />
+        <Route path="/hotels/:id" element={<Hotel />} />
         
       </Routes>
     </BrowserRouter>

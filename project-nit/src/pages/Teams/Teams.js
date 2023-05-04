@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Teams.css";
-import TeamCard from "../../components/card/TeamCard/TeamCard";
 import teamsJSON from "../../common/teams.json";
 import { Link, useNavigate } from "react-router-dom";
+import TeamCard from "../../components/card/TeamCard/TeamCard";
 
 export default function Teams() {
   const navigation = useNavigate();

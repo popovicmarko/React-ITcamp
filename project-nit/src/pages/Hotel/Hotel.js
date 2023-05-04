@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import HotelCard from "../../components/card/hotelCard/HotelCard";
-import hotels from "../../common/hotels.json";
-import "./Hotel.css";
+import hotels from "../../common/hotels.json"
 
 export default function Hotel() {
   const { id } = useParams();
