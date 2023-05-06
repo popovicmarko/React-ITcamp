@@ -1,6 +1,8 @@
 import { useState } from "react";
 import './Login.css';
 import axios from 'axios';
+import { BASE_URL } from "../../config/api";
+import { useNavigate } from "react-router-dom";
 export function Login() {
 
     async function Login(data) {
@@ -8,8 +10,11 @@ export function Login() {
             const user = await axios.post('https://nit-backend.onrender.com/users/login', data)
             const userInfo = await user.data
             console.log(userInfo)
+            localStorage.setItem('token', userInfo.token)
+            console.log(userInfo.token)
         } catch (err) {
             console.log(err)
+            localStorage.removeItem('token')
         }
     }
 
