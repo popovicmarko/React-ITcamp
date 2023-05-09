@@ -10,7 +10,7 @@ export function Login() {
         const user = await axios.post(`${BASE_URL}/users/login`, data);
         const userInfo = await user.data;
         console.log(userInfo);
-        // console.log(userInfo.token);
+        console.log(userInfo.token);
         localStorage.setItem("token", userInfo.token);
         navigation("/");
       } catch (err) {
